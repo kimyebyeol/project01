@@ -1,0 +1,162 @@
+@import url(reset.css);
+
+h3 {
+ font-size: 32px;
+}
+/* 게시판 검색창 */
+#search_wrap fieldset {
+  float: right;
+  margin-bottom: 10px;
+  border: 0;
+}
+#search_wrap select,
+#search_wrap input {
+  font-size: 14px;
+  float: left;
+  margin-right: 2px;
+  border: 1px solid #aaa;
+}
+#search_wrap select input {
+  height: 24px;
+  line-height: 22px;
+  width: 150px;
+}
+#search_wrap button {
+  height: 32px;
+  width: 60px;
+  border: 0;
+  background: #44465c;
+  color: #ffffff;
+}
+#search_wrap select {
+  height: 24px;
+}
+#search_wrap input {
+  height: 22px;
+  line-height: 22px;
+  width: 150px;
+}
+#search_wrap button:hover {
+  cursor: pointer;
+  color: #333333;
+}
+/* 게시판 목록 */
+#board > div {
+  border-bottom: 1px dotted #e1e3e6;
+  background-color: #ffffff;
+}
+#board> div :hover{background: #ffffee;}
+#board>div.first{background: #f6f6f6;
+border-radius: 10px 10px 0 0; color: #333333;}
+
+#board>div.first>div{
+    width: 100px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    float: left;
+}
+#board>div>div.left{text-align: left;}
+#board>div>div.first:hover{
+    background: #ff9900;
+}
+#boaed>div input{
+    display: none;
+}
+#board > div > div{
+    width: 100px;
+    line-height: 30px;
+    height: 50px;
+    text-align: center;
+    float: left;
+}
+/* 게시판세부목록 */
+#board .cf .title{
+    width: 430px;
+    text-align: justify;
+    margin-right: -30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;}
+    
+    #board .cf.first .title {text-align: center;}
+    /* #board 하위의 클래스 .cf.first 두개를 가진 요소 하위의 .title 선택 */
+
+    #board .content_wrap{
+        width: 96%;
+        text-align: left;
+        padding: 0 2%;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    
+    #board .content_wrap .subject{
+        text-align: justify;
+        font-weight: bold;
+        font-size: 16px;
+        background: #ffefbf;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    #board .content_wrap .content{
+        text-align: justify;
+        background-color: #e1e3e6;
+        padding: 0;
+        line-height: 0;
+        height: 0;
+        overflow: hidden;
+        border: none;
+    }
+    /* cheaked */
+    #board input:checked~div.content_wrap{
+        height: auto;
+        padding: 2% 2%;
+    }
+    #board input:checked~div.content_wrap >.subject{
+        height: auto;
+        padding: 10px 20px;
+        line-height: 26px;
+    }
+    #board input:checked~div.content_wrap >.content{
+        height: auto;
+        padding: 10px 20px;
+        line-height: 24px;
+        border: 1px solid #ddd;
+    }
+    #board input:checked~div.title>label{
+        cursor: default;
+    }
+    #board label{
+        cursor: pointer;
+    }
+
+    .icon{
+      background: url(/project1/img/ico-announce.png) no-repeat center;
+      width: 16px;
+      height: 14px;
+
+    }
+    
+    .ico_attach{
+      background: url(/project1/img/ico-attach.png) no-repeat center;
+      width: 15px;
+      height: 15px;
+    }
+
+    .fonnt{
+      font-size: 15px;
+    }
+
+    .container ul li a {
+      color: #333333;
+    }
+#menu1{
+margin-left: 1400px;
+  
+}
+
+
+    

@@ -1,0 +1,139 @@
+#slide_wrap{
+  float: right;
+  margin-top: 46px;
+}
+
+
+#brandVisual {
+  position: relative;
+  width: 410px;
+  overflow: hidden;
+  height: 164px;
+}
+
+#brandVisual .visual_slide li a {
+  display: block;
+  text-indent: -99999px;
+}
+
+#brandVisual .visual_slide {
+  width: 410px;
+  height: 118px;
+}
+
+#brandVisual .visual_slide li {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  width: 410px;
+  height: 118px;
+  cursor: pointer;
+
+}
+
+#brandVisual .visual_slide li.visual_0 {
+  background-image: url(../img/20220829_banner_pc01.png);
+}
+
+#brandVisual .visual_slide li.visual_1 {
+  background-image: url(../img/20220628_banner_pc01.png);
+}
+
+#brandVisual .visual_slide li.visual_2 {
+  background-image: url(../img/20220822_banner_pc02.png);
+}
+#brandVisual .visual_slide li.visual_3 {
+  background-image: url(../img/20220825_banner_pc01.png);
+}
+#brandVisual .visual_slide li.visual_4 {
+  background-image: url(../img/20220817_banner_pc02.png);
+}
+#brandVisual .visual_slide li.visual_5 {
+  background-image: url(../img/20220823_banner_pc01.png);
+}
+#brandVisual .visual_slide li.visual_6 {
+  background-image: url(../img/20220819_banner_pc01.png);
+}
+#brandVisual .visual_slide li.visual_7 {
+  background-image: url(../img/20220824_banner_pc01.png);
+}
+#brandVisual .visual_slide li.visual_8 {
+  background-image: url(../img/20220822_banner_pc01.png);
+}
+#brandVisual .visual_slide li.visual_9 {
+  background-image: url(../img/20220830_banner_pc01.png);
+}
+#brandVisual .visual_slide li.visual_10 {
+  background-image: url(../img/20220620_banner_pc02.png);
+}
+#brandVisual .visual_slide li.visual_11 {
+  background-image: url(../img/20201110_banner_pc02.png);
+}
+#brandVisual .visual_slide li.visual_12 {
+  background-image: url(../img/20220817_banner_pc01.png);
+}
+#brandVisual .visual_slide li.visual_13 {
+  background-image: url(../img/20220824_banner_pc02.png);
+}
+#brandVisual .visual_slide li.visual_14 {
+  background-image: url(../img/20220906_banner_pc01.png);
+}
+#brandVisual .visual_slide li.visual_15 {
+  background-image: url(../img/20220905_banner_pc01.png);
+}
+
+/* controls */
+.btnImg {
+  position: relative;
+  margin: auto;
+  top: 0px;
+}
+
+.btnImg img {
+  width: 7px;
+  height: 12px;
+  cursor: pointer;
+
+}
+
+.btnImg .prev {
+  position: absolute;
+  left: 100px;
+}
+
+.btnImg .next {
+  position: absolute;
+  right: 276px;
+  margin-right: -15px;
+}
+
+.btnImg .stop{
+  position: absolute;
+  right: 282px;
+}
+
+/* pager */
+
+.hidden {
+  display: block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -99999px;
+}
+
+#brandVisual .buttonList::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#brandVisual .buttonList>li.on {
+  background-position: 0 0;
+}
+
+.counter{
+  margin: 0 150px;
+}
+
